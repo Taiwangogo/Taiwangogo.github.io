@@ -31,10 +31,8 @@
           margin-right: 10px;
           text-align: center; /* 文字置中 */
         }
-     
          .welcome,.item1,.item2,.item3{
           height: 300px; /* 固定高度 */
-         
           display: flex; /* 讓容器內的文字置中 */
           justify-content: center;  /* 水平置中 */
           align-items: center; /* 垂直置中 */
@@ -58,7 +56,38 @@
            .item3{
           background-color: darkorange; /* 橙色背景 */
           }
-         
+           .item3text {
+            display: flex; /* 讓容器內的文字置中 */
+            flex-direction: column; /* 文字垂直排列 */
+            align-items: center; /* 垂直置中 */
+            width: 400px; /* 固定寬度 */
+            height: 300px; /* 固定高度 */
+           }
+          .item3text div{
+            margin: 10px 0; /* 上下間距 */
+            display: flex; /* 讓容器內的文字置中 */
+            align-items: center; /* 垂直置中 */
+          }
+           .item3text  a{
+            margin-right: 8px; /* 文字與輸入框之間的間距 */
+            font-size: 20px; /* 字體大小 */
+            font-weight: bold; /* 粗體 */
+          }
+          .item3text input{
+            margin-left: 8px;
+            height: 40px;
+            width: 300px;
+            text-align: center; /* 文字置中 */
+          }
+          .item3text button{
+            margin:auto;
+            height: 50px;
+            width: 400px; /* 固定寬度 */
+            background-color: #4CAF50; /* 綠色背景 */
+            color: white; /* 白色文字 */
+            border: none; /* 無邊框 */
+            cursor: pointer; /* 鼠標指針變為手形 */
+          } 
         </style>
   </head>
   <body>
@@ -81,7 +110,13 @@
       <div class="item2text">功能</div>
     </div>
      <div class="item3">
-      <div class="item3text">加入台派</div>
+      <div class="item3text">
+         <div> <a >申請店家</a><input type="text" placeholder="請輸入店家名稱"/></div>
+         <div> <a >申請店家</a><input type="text" placeholder="店家申請人" /></div>
+         <div> <a >信箱名稱</a><input type="text" placeholder="請輸入信箱名稱"/></div>
+          <button>送出申請</button>
+          <a>我們會主動聯繫你!</a>
+      </div>
     </div>
 
     </body>
