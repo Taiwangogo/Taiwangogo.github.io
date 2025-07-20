@@ -64,23 +64,24 @@
             height: 300px; /* 固定高度 */
            }
           .item3text div{
-            margin: 10px 0; /* 上下間距 */
+            margin: 15px 0; /* 上下間距 */
             display: flex; /* 讓容器內的文字置中 */
             align-items: center; /* 垂直置中 */
           }
            .item3text  a{
-            margin-right: 8px; /* 文字與輸入框之間的間距 */
+            width: 200px; /* 固定寬度 */
+            margin:1px; /* 右邊距 */
             font-size: 20px; /* 字體大小 */
             font-weight: bold; /* 粗體 */
           }
           .item3text input{
-            margin-left: 8px;
             height: 40px;
-            width: 300px;
+            width: 200px;
             text-align: center; /* 文字置中 */
           }
           .item3text button{
-            margin:auto;
+            font-size: 20px; /* 字體大小 */;
+            margin: 0px; /* 左邊距 */
             height: 50px;
             width: 400px; /* 固定寬度 */
             background-color: #4CAF50; /* 綠色背景 */
@@ -111,9 +112,9 @@
     </div>
      <div class="item3">
       <div class="item3text">
-         <div> <a >申請店家</a><input type="text" placeholder="請輸入店家名稱"/></div>
-         <div> <a >申請店家</a><input type="text" placeholder="店家申請人" /></div>
-         <div> <a >信箱名稱</a><input type="text" placeholder="請輸入信箱名稱"/></div>
+         <div> <a >店家名稱</a><input type="text" placeholder="請輸入店家名稱"/></div>
+         <div> <a >申請人名稱</a><input type="text" placeholder="請輸入申請人姓名" /></div>
+         <div> <a >申請人信箱</a><input type="text" placeholder="請輸入申請人信箱"/></div>
           <button>送出申請</button>
           <a>我們會主動聯繫你!</a>
       </div>
